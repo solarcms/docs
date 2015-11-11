@@ -5,13 +5,13 @@ Package routing rule
 ----
 
 ```php
-http://domainname.com/<module_name>/*
+http://www.domainname.com/<module_name>/*
 ```
 
 if route is referenced in admin module
 
 ```php
-http://domainname.com/solar/<module_name>/*
+http://www.domainname.com/solar/<module_name>/*
 ```
 
 Example package route
