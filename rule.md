@@ -17,8 +17,15 @@ http://domainname.com/solar/<module_name>/*
 Example package route
 
 ```php
-Route::group(['namespace' => 'Solarcms\UserManager\Http\Controllers', 'prefix'=>'solar/usermanager', 'as'=>'Solar.usermanager::'], function() {
-    Route::get('user', ['as' => 'users', 'uses' => 'UserController@index']);
-});
+Route::group([
+    'namespace' => 'Solarcms\UserManager\Http\Controllers',
+    'prefix' => 'solar/usermanager',
+    'as' => 'Solar.usermanager::'], function () {
+
+    Route::get('user', [
+            'as' => 'users',
+            'uses' => 'UserController@index']
+    );
+})
 ```
 
